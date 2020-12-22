@@ -118,23 +118,144 @@ main{
     justify-content: center;
     align-items: center;
 }
-    .container-principal{
-        background-color: grey;
-        height: 70vh;
-    }
-    .container-fluide{
-        background-color: chartreuse!important;
-        height: 70vh;
-        margin: auto;
-        padding: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 5px solid black;
-    }
+.container-principal{
+    background-color: grey;
+    height: 70vh;
+}
+.container-fluide{
+    background-color: chartreuse!important;
+    height: 70vh;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+.container-pricipal{
+    display: flex;
+    flex-direction: row;
+}
+.container {
+  background-color: #F2F2F2;
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding-bottom: 20px;
+  display: block;
+}
 
+.container .cart {
+  width: 60%;
+  height: 260px;
+  border: solid 2px #F2F2F2;
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 8px 9px #d9d9d9;
+  box-shadow: 6px 8px 9px #d9d9d9;
+  background-color: white;
+  position: relative;
+  margin: 20px auto;
+}
+.container .cart .menu-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+.menu-link .warning {
+  position: absolute;
+  padding: 10px 26px;
+  background-color: red;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+  border-radius: 5px;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.container .cart .menu-link .container-img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.container .cart .menu-link .name {
+  font-family: "Roboto", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 0px;
+  padding: 0px 10px;
+}
+.container .cart .menu-link .price {
+  font-family: "Roboto", serif;
+  font-size: 1rem;
+  color: black;
+  padding:0px 10px;
+  margin-top: -25px;
+}
+.container .cart .btn {
+  border: none;
+  position: absolute;
+  bottom: 5px;
+  color: white;
+  background-color: black;
+  width: 60px;
+  right:5px;
+  display: flex;
+  justify-content: center;
+  margin: auto; 
+  transition: transform all 0.3s ease-out;
+}
+.container .cart .button {
+  font-size: 1em;
+  color: lightgray;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform all 0.3s ease-out;
+  padding: 0px auto;
+  margin: 0px auto;
+  display:flex;
+  justify-content: center;
+  width: 60px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container .cart .btn:hover, .container .cart .button:hover {
+  transform: scale(1.1);
+}
+.container .cart .btn-add {
+  border: none;
+  position: absolute;
+  right: 20px;
+  bottom: 35px;
+  color: white;
+  background-color: white;
+  margin-top: -15px;
+  margin-right: 20px;
+}
+.container .cart .btn-add .fa-cart-plus{
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  margin-top: -15px;
+}
+.container .cart .btn-add .fas {
+  font-size: 1rem;
+  opacity: 1;
+  color: black;
+  margin-top: -15px;
+  transition: transform .2s ease;
+}
+.container .cart .btn-add .fas:hover {
+    transform: scale(1.1);
+}
     /*     fin du main     */
-
 /*     début du footer     */
 footer{
     background-color: lightgrey;
@@ -233,99 +354,67 @@ footer{
         font-weight: bold;
     }
 }
-.container-pricipal{
-    display: flex;
-    flex-direction: row;
-}
-.container {
-  background-color: #F2F2F2;
-  width: 100%;
-  margin: 20px 0 0 0;
-  padding-bottom: 20px;
-  display: block;
-}
 
-.container .cart {
-  width: 60%;
-  height: 260px;
-  border: solid 2px #F2F2F2;
-  border-radius: 20px;
-  -webkit-box-shadow: 6px 8px 9px #d9d9d9;
-  box-shadow: 6px 8px 9px #d9d9d9;
-  background-color: white;
-  position: relative;
-  margin: 20px auto;
-}
-.container .cart .menu-link {
-  text-decoration: none;
-  color: black;
-  font-size: 1rem;
-}
-.menu-link .warning {
-  position: absolute;
-  padding: 10px 26px;
-  background-color: red;
-  top: 12px;
-  right: 12px;
-  z-index: 1;
-  border-radius: 5px;
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-}
 
-.container .cart .menu-link .container-img {
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-}
-.container .cart .menu-link .name {
-  font-family: "Roboto", serif;
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-top: 0px;
-  padding: 0px 10px;
-}
-.container .cart .menu-link .price {
-  font-family: "Roboto", serif;
-  font-size: 1rem;
-  color: black;
-  padding:0px 10px;
-  margin-top: -25px;
-}
-.container .cart .btn-add {
-  border: none;
+.overlay {
   position: absolute;
-  right: 20px;
-  bottom: 35px;
-  color: white;
-  background-color: white;
-  margin-top: -15px;
-  margin-right: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: opacity 50ms;
+  visibility: hidden;
+  opacity: 0;
 }
-.container .cart .btn-add .fa-cart-plus{
-  position: absolute;
-  left: 3px;
-  top: 6px;
-  width: 10px;
-  height: 10px;
-  margin-top: -15px;
-}
-.container .cart .btn-add .fas {
-  font-size: 1rem;
+.overlay:target {
+  visibility: visible;
   opacity: 1;
-  color: black;
-  margin-top: -15px;
-  transition: transform .2s ease;
-}
-.container .cart .btn-add .fas:hover {
-    transform: scale(1.1);
 }
 
+.popup {
+  margin: 0px 50%;
+  padding: 20px;
+  background: rgba(1,1,1,.6);
+  border-radius: 5px;
+  width: 150%;
+  height:600px;
+  position: relative;
+  transition: all 5s ease;
+  z-index:1100;
+}
 
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+.popup .close:hover {
+  color: yellow;
+}
+.popup .content {
+  max-height: 100%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
 </style>  
 
 </head>
@@ -334,7 +423,7 @@ footer{
     <header>
         <nav>
             <div class="container-header">  
-                <a href="#" id="logo" class="zoom">OriCamera</a>
+                <a href="#" id="logo">OriCamera</a>
                 <div class="links">
                     <a href="#">
                     <button class="toggle image" id="menu-icon">
@@ -344,9 +433,9 @@ footer{
                         </button>
                     </a>
                     <ul>
-                        <li class="zoom"><a href="./index.html">Accueil</a></li>
-                        <li class="checkout zoom" >
-                            <a href="#" >
+                        <li><a href="./index.html">Accueil</a></li>
+                        <li class="checkout">
+                            <a href="#">
                                 <i class="fa fa-shopping-cart red"></i>  Votre panier 
                                 <span class="badge badge-red">0</span>
                             </a>
@@ -364,8 +453,8 @@ footer{
             </div>
         </div>
         <a href="index.html" id="return-icon"><i class="fas fa-arrow-left"></i></a>
-
-        <div class="container-pricipal">
+      
+      <div class="container-pricipal">
         <div class="container-fluid container">
 
             <div class="cart">
@@ -376,10 +465,34 @@ footer{
                         <p class="name">Nikon</p>
                         <p class="price">499$</p>
                     </section>
-                    <button class="btn-add zoom">
-                        <i class="fas fa-cart-plus"></i>
-                    </button>
+              <button class="btn">
+                    <a class="button" href="#popup1">plus</a>
+                </button>
+                    
+              <div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Fiche produit</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<div class="cart">
+                <section class="menu-link">
+                    <span class="warning">Plus que 2 en stock</span>
+                    <div class="content-img">
+                        <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                    </div>
+                    <p class="name">Nikon</p>
+                    <p class="price">499$</p>
+                </section>
+                <button class="btn-add">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
             </div>
+		</div>
+	</div>
+</div>
+            </div>
+          
+          
             <div class="cart">
                 <section class="menu-link">
                     <span class="warning">Plus que 2 en stock</span>
@@ -389,7 +502,7 @@ footer{
                     <p class="name">Nikon</p>
                     <p class="price">499$</p>
                 </section>
-                <button class="btn-add zoom">
+                <button class="btn-add">
                     <i class="fas fa-cart-plus"></i>
                 </button>
             </div>     
@@ -404,10 +517,33 @@ footer{
                         <p class="name">Nikon</p>
                         <p class="price">499$</p>
                     </section>
-                    <button class="btn-add">
-                        <i class="fas fa-cart-plus"></i>
-                    </button>
+              <button class="btn">
+                    <a class="button" href="#popup1">plus</a>
+                </button>
+                    
+              <div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Fiche produit</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<div class="cart">
+                <section class="menu-link">
+                    <span class="warning">Plus que 2 en stock</span>
+                    <div class="content-img">
+                        <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                    </div>
+                    <p class="name">Nikon</p>
+                    <p class="price">499$</p>
+                </section>
+                <button class="btn-add">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
             </div>
+		</div>
+	</div>
+</div>
+            </div>
+          
             <div class="cart">
                 <section class="menu-link">
                     <div class="content-img">
@@ -416,12 +552,12 @@ footer{
                     <p class="name">Nikon</p>
                     <p class="price">499$</p>
                 </section>
-                <button class="btn-add zoom">
+                <button class="btn-add">
                     <i class="fas fa-cart-plus"></i>
                 </button>
             </div>     
         </div>
-</div>
+      </div>
     </main>
 
     <footer>
@@ -444,8 +580,7 @@ footer{
             </div>
         </footer>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
