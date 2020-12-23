@@ -339,7 +339,91 @@ footer{
     }
     .list-inline-item:not(:last-child) {
         margin-right: 0rem; 
-}
+    }
+
+    .productselect__box{
+        margin: 25% auto 0%;
+    }
+    .productselect__box .productselect__title{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .jumbotron {
+        padding: 0px;
+    }
+    #return-icon{
+        margin: 0px auto;
+    }
+    .container-pricipal {
+    display: flex;
+    flex-direction: column;
+    }
+    .container-pricipal .container {
+    background-color: lightgrey;
+    margin: 0; 
+    padding-bottom:0; 
+    }
+    .container-pricipal .container .cart {
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    }
+    .container-pricipal .container .cart .overlay{
+        top:-20px;
+    }
+    .container-pricipal .container .cart .overlay .popup{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        background-color: rgba(1,1,1,.9);
+    }
+    .container-pricipal .container .cart .overlay .popup h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: snow;
+    }
+    .container-pricipal .container .cart .overlay .popup .close {
+    color: snow;
+    }
+    .container-pricipal .container .cart .overlay .popup .content-overlay{
+        width: 100%;
+        height: 425px;
+        margin: 5px 0px;
+        background-color: snow;
+    }
+    .container-pricipal .container .cart .overlay .popup .content-overlay .cart-overlay .menu-link .warning {
+        position: absolute;
+        padding: 10px 26px;
+        background-color: #ff0000b3;
+        top: 75px;
+        right: 40px;
+        z-index: 1;
+        border-radius: 5px;
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .container-pricipal .container .cart .overlay .popup .content-overlay .btn-add{
+        margin-right: 12%;
+        margin-bottom: 3%;
+    }
+
+
+
+
+
+
+
+    .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+    }
+
     footer ul li{
         padding: 5px;
     }
@@ -349,9 +433,13 @@ footer{
     .zoom:hover{
         transform: scale(1.5);
     }
-    footer ul li a p{
+    footer ul li a{
         font-size: 10px;
         font-weight: bold;
+    }
+    .fa-twitter-square, .fa-instagram-square, 
+    .fa-facebook, .fa-pinterest, .fas{
+        font-size: 18px;
     }
 }
 
@@ -373,11 +461,11 @@ footer{
 }
 
 .popup {
-  margin: 0px 50%;
+  margin: 0px 0%;
   padding: 20px;
   background: rgba(1,1,1,.6);
   border-radius: 5px;
-  width: 150%;
+  width: 100%;
   height:600px;
   position: relative;
   transition: all 5s ease;
@@ -407,7 +495,7 @@ footer{
   overflow: auto;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 769px){
   .box{
     width: 70%;
   }
@@ -452,12 +540,16 @@ footer{
                 <h1 class="productselect__title">Cet article OriCamera vous intéresse ?</h1>
             </div>
         </div>
-        <a href="index.html" id="return-icon"><i class="fas fa-arrow-left"></i></a>
+
+        <a href="index.html" id="return-icon">
+            <i class="fas fa-arrow-left"></i>
+        </a>
       
-      <div class="container-pricipal">
-        <div class="container-fluid container">
+        <div class="container-pricipal">
 
-            <div class="cart">
+            <div class="container-fluid container">
+
+                <div class="cart">
                     <section class="menu-link">
                         <div class="content-img">
                             <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
@@ -465,51 +557,36 @@ footer{
                         <p class="name">Nikon</p>
                         <p class="price">499$</p>
                     </section>
-              <button class="btn">
-                    <a class="button" href="#popup1">plus</a>
-                </button>
-                    
-              <div id="popup1" class="overlay">
-	<div class="popup">
-		<h2>Fiche produit</h2>
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-			<div class="cart">
-                <section class="menu-link">
-                    <span class="warning">Plus que 2 en stock</span>
-                    <div class="content-img">
-                        <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                    <button class="btn">
+                        <a class="button" href="#popup1">détails</a>
+                    </button>
+                        
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h2>Fiche produit</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content-overlay">
+                            <div class="cart-overlay">
+                                <section class="menu-link">
+                                    <span class="warning">Plus que 2 en stock</span>
+                                    <div class="content-img">
+                                        <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                                    </div>
+                                    <p class="name">Nikon</p>
+                                    <p class="price">499$</p>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, doloremque.</p>
+                                </section>
+                                <button class="btn-add">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <p class="name">Nikon</p>
-                    <p class="price">499$</p>
-                </section>
-                <button class="btn-add">
-                    <i class="fas fa-cart-plus"></i>
-                </button>
-            </div>
-		</div>
-	</div>
-</div>
-            </div>
-          
-          
-            <div class="cart">
-                <section class="menu-link">
-                    <span class="warning">Plus que 2 en stock</span>
-                    <div class="content-img">
-                        <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
-                    </div>
-                    <p class="name">Nikon</p>
-                    <p class="price">499$</p>
-                </section>
-                <button class="btn-add">
-                    <i class="fas fa-cart-plus"></i>
-                </button>
-            </div>     
-        </div>
-        <div class="container-fluid container">
-
-            <div class="cart">
+                </div>
+                </div>
+            
+                <div class="cart">
                     <section class="menu-link">
                         <div class="content-img">
                             <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
@@ -517,70 +594,133 @@ footer{
                         <p class="name">Nikon</p>
                         <p class="price">499$</p>
                     </section>
-              <button class="btn">
-                    <a class="button" href="#popup1">plus</a>
-                </button>
+                    <button class="btn">
+                        <a class="button" href="#popup1">détails</a>
+                    </button>
                     
-              <div id="popup1" class="overlay">
-	<div class="popup">
-		<h2>Fiche produit</h2>
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-			<div class="cart">
-                <section class="menu-link">
+                    <div id="popup1" class="overlay">
+                    <div class="popup">
+                    <h2>Fiche produit</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                    <div class="cart">
+                    <section class="menu-link">
                     <span class="warning">Plus que 2 en stock</span>
                     <div class="content-img">
-                        <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                    <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
                     </div>
                     <p class="name">Nikon</p>
                     <p class="price">499$</p>
-                </section>
-                <button class="btn-add">
+                    </section>
+                    <button class="btn-add">
                     <i class="fas fa-cart-plus"></i>
-                </button>
+                    </button>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div> 
+
             </div>
-		</div>
-	</div>
-</div>
-            </div>
-          
-            <div class="cart">
-                <section class="menu-link">
+
+            <div class="container-fluid container">
+
+                <div class="cart">
+                    <section class="menu-link">
+                        <div class="content-img">
+                            <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                        </div>
+                        <p class="name">Nikon</p>
+                        <p class="price">499$</p>
+                    </section>
+                    <button class="btn">
+                        <a class="button" href="#popup1">détails</a>
+                    </button>
+                    
+                    <div id="popup1" class="overlay">
+                    <div class="popup">
+                    <h2>Fiche produit</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                    <div class="cart">
+                    <section class="menu-link">
+                    <span class="warning">Plus que 2 en stock</span>
                     <div class="content-img">
-                        <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                    <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
                     </div>
                     <p class="name">Nikon</p>
                     <p class="price">499$</p>
-                </section>
-                <button class="btn-add">
+                    </section>
+                    <button class="btn-add">
                     <i class="fas fa-cart-plus"></i>
-                </button>
-            </div>     
+                    </button>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="cart">
+                    <section class="menu-link">
+                        <div class="content-img">
+                            <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                        </div>
+                        <p class="name">Nikon</p>
+                        <p class="price">499$</p>
+                    </section>
+                    <button class="btn">
+                        <a class="button" href="#popup1">détails</a>
+                    </button>
+                    
+                    <div id="popup1" class="overlay">
+                    <div class="popup">
+                    <h2>Fiche produit</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                    <div class="cart">
+                    <section class="menu-link">
+                    <span class="warning">Plus que 2 en stock</span>
+                    <div class="content-img">
+                    <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                    </div>
+                    <p class="name">Nikon</p>
+                    <p class="price">499$</p>
+                    </section>
+                    <button class="btn-add">
+                    <i class="fas fa-cart-plus"></i>
+                    </button>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div> 
+
+            </div>
+
         </div>
-      </div>
     </main>
 
+
     <footer>
-        <footer>
-            <div class="container-fluid">
-                <ul class="list-inline footer__div text-center">
-                    <li class="list-inline-item footer__item"><a href="#"><i class="fas fa-balance-scale footer__icon"></i><br/>Mentions légales</a></li>
-                    <li class="list-inline-item footer__item"><a href="#"><i class="fas fa-user-lock footer__icon"></i><br/>Protection des données</a></li>
-                    <li class="list-inline-item footer__item"><a href="#"><i class="fas fa-cogs footer__icon"></i><br/>CGV</a></li>
-                    <li class="list-inline-item footer__item"><a href="#"><i class="fas fa-cookie footer__icon"></i><br/>Cookies</a></li>
-                </ul>
-            </div>
-            <div class="container-fluid">
-                <ul class="list-inline footer__div text-center">
-                    <li class="list-inline-item footer__item"><a href="#"><i class="fab fa-twitter-square footer__icon"></i></a></li>
-                    <li class="list-inline-item footer__item"><a href="#"><i class="fab fa-instagram-square footer__icon"></i></a></li>
-                    <li class="list-inline-item footer__item"><a href="#"><i class="fab fa-facebook footer__icon"></i></a></li>
-                    <li class="list-inline-item footer__item"><a href="#"><i class="fab fa-pinterest footer__icon"></i></a></li>
-                </ul>
-            </div>
-        </footer>
+        <div class="container-fluid">
+            <ul class="list-inline footer__div text-center">
+                <li class="list-inline-item footer__item"><a href="#"><i class="fas fa-balance-scale footer__icon"></i><br/>Mentions légales</a></li>
+                <li class="list-inline-item footer__item"><a href="#"><i class="fas fa-user-lock footer__icon"></i><br/>Protection des données</a></li>
+                <li class="list-inline-item footer__item"><a href="#"><i class="fas fa-cogs footer__icon"></i><br/>CGV</a></li>
+                <li class="list-inline-item footer__item"><a href="#"><i class="fas fa-cookie footer__icon"></i><br/>Cookies</a></li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <ul class="list-inline footer__div text-center">
+                <li class="list-inline-item footer__item"><a href="#"><i class="fab fa-twitter-square footer__icon"></i></a></li>
+                <li class="list-inline-item footer__item"><a href="#"><i class="fab fa-instagram-square footer__icon"></i></a></li>
+                <li class="list-inline-item footer__item"><a href="#"><i class="fab fa-facebook footer__icon"></i></a></li>
+                <li class="list-inline-item footer__item"><a href="#"><i class="fab fa-pinterest footer__icon"></i></a></li>
+            </ul>
+        </div>
     </footer>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
