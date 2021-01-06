@@ -6,267 +6,10 @@
     <title>Oricamera</title>
     <meta name="description" content="Oricamera, notre nouvelle boutique en ligne spécialisée dans les appareils photos vintages">
 
-    
+    <link rel="stylesheet" href="src/style.css">
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
 
-
-<style>
-*
-{
-    box-sizing:border-box;
-    padding:0px;
-    margin:0px;
-}
-body
-{
-    width: 100%;
-    height: auto;
-    background-color: whitesmoke;
-    overflow: hidden;
-}
-
-/*     début du header     */
-
-.container
-{
-    margin:auto;
-    padding-left:15px;
-    padding-right:15px;
-}
-
-nav
-{
-    background-color: lightgrey; 
-    width: 100%;
-    height: 76px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    border-bottom: 5px solid black;
-}
-ul 
-{
-    list-style: none;
-}
-li 
-{
-    display: inline-block;
-    /*float:left;*/
-    padding:10px;
-    font-size:18px;
-}
-a
-{
-    color:black;
-    text-decoration:none;
-    font-weight:bold;
-}
-a:hover
-{
-    color:black;
-}
-#logo
-{
-    margin:20px 0 20px 20px;
-    font-family:sans-serif;
-    font-size:30px;
-    cursor:pointer;
-    color:black;
-    float:left;
-    height:45px;
-    display:block;
-}
-
-#logo:hover
-{
-    text-decoration:none;
-    color:black;
-    border-bottom: 1px solid black;
-}
-.links
-{
-    float:right;
-    padding:18px;
-}
-a .toggle
-{
-    display:none;
-}
-#menu-icon
-{
-    display:hidden;
-    width:40px;
-    height:40px;
-}
-.toggle > span {
-  display: block;
-  border-radius: 20px;
-  height: 5px;
-  width: 34px;
-  background: black;
-  margin: auto;
-  margin-bottom: 3px;
-}
-
-/*     fin du header     */
-
-/*     début du main     */
-main{
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.accueil {
-  padding: 0px;
-  margin: 0px;
-  height: 100%;
-  width: 100%;
-  background: url("https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg") no-repeat;
-  background-size: cover; 
-  background-position: center;
-  filter: sepia(90%);
-  filter: contrast(70%);
-  
-}
-    .accueil__title{
-        margin: 85px auto 50px;
-    text-align: center;
-    color: black;
-    }
-    .accueil__description{
-    text-align: center;
-    color: black;
-    margin: 20px auto;
-    }
-    .accueil__description :nth-last-child(2)
-    {
-        margin: 0px auto 30px;
-        font-size: 1rem;
-    }
-    .accueil__description :nth-last-child(3)
-    {
-        margin: 0px auto 10px;
-        font-size: 1rem;
-    }
-    .accueil__description :nth-last-child(1)
-    {
-        font-size: 16px;
-        font-weight: bold;
-        color: rgb(83, 1, 1);
-        margin: 0px auto 30px;
-    }
-
-/*     fin du main     */
-
-/*     début du footer     */
-    footer{
-    background-color: lightgrey;
-    margin-bottom: 0px;
-    border-bottom: 5px solid black;
-    text-align: center;
-    }
-
-/*     fin du footer     */
-.zoom {
-        transition: transform .2s ease;
-    }
-    .zoom:hover{
-        transform: scale(1.5);
-    }
-/*     début des media-quries     */
-@media (min-width: 320px) and (max-width: 768px) {
-    #logo
-    {
-        font-size: 24px;
-    }
-    #menu-icon
-    {
-        display:inline-block;
-        width:40px;
-        height:40px;
-    }
-        .links
-    {
-        padding:20px 20px;
-    } 
-    .links ul 
-    {
-            
-        display:none;
-        position:absolute;
-        padding:20px;
-        background-color: rgba(255, 250, 250, .7);
-        top:76px;
-        right:0px;
-        width:100%;      
-    }
-    .links:hover ul
-    {
-        display:block;
-            
-    }
-    .links li    
-    {
-        text-align:center;
-        width:100%;
-        padding:15px 0;
-        margin:0;
-    }
-
-    .accueil__title{
-        font-size: 24px;
-        font-weight: bold;
-        background-color: rgba(255, 250, 250, 0.5);
-        border-radius: 25px;
-    }
-    .accueil__description{
-        font-size: 14px;
-        background-color: rgba(255, 250, 250, 0.5);
-        border-radius: 25px;
-    }
-    .accueil{
-        padding: 10px 10px;
-    }
-    .accueil__description :nth-last-child(2)
-    {
-        margin: 0px auto 30px;
-    }
-    .accueil__description :nth-last-child(3)
-    {
-        margin: 0px auto 10px;
-    }
-    .accueil__description :nth-last-child(1)
-    {
-        font-size: 16px;
-        font-weight: bold;
-        color: rgb(83, 1, 1);
-    }
-    .list-inline-item{
-        margin: 0px;
-    }
-    .list-inline-item:not(:last-child) {
-        margin-right: 0rem; 
-}
-    footer ul li{
-        padding: 5px;
-    }
-    .zoom {
-        transition: transform .2s ease;
-    }
-    .zoom:hover{
-        transform: scale(1.5);
-    }
-    footer ul li a p{
-        font-size: 10px;
-        font-weight: bold;
-    }
-}
-
-</style>
 </head>
 
 <body>
@@ -291,18 +34,14 @@ main{
         
                     <ul>
         
-                    <li class="zoom">
-                        <a href="#">Accueil</a>
-                    </li>
-                    <li class="zoom">
-                        <a href="catalogue.html">Catalogue</a>
-                    </li>
-                    <li class="checkout zoom">
-                        <a href="#">
-                        <i class="fa fa-shopping-cart red"></i>  Votre panier 
-                        <span class="badge badge-red">0</span>
-                        </a>
-                    </li>
+                        <li class="zoom"><a href="index.html">Accueil</a></li>
+                        <li class="zoom"><a href="catalogue.html">Catalogue</a></li>
+                        <li class="checkout zoom">
+                            <a href="panier.html">
+                                <i class="fa fa-shopping-cart red"></i>  Votre panier 
+                                <span class="badge badge-red" id="nbrArticles">0</span>
+                            </a>
+                        </li>
                     
                     </ul>
         
@@ -330,9 +69,7 @@ main{
             <div >
                 <div class="row">
                     
-                    <div class="col-12 col-md-10 col-lg-11" id="products">
-                        <!--SECTION PRODUITS CREEE VIA JS DANS FICHIER INDEX.JS-->
-                    </div>
+                    
                     
                 </div>
             </div>    
@@ -342,18 +79,51 @@ main{
     <footer>
         <div >
             <ul class="list-inline footer__div text-center">
-                <li class="list-inline-item footer__item zoom"><a href="#"><i class="fas fa-balance-scale footer__icon"></i><p>Mentions légales</p></a></li>
-                <li class="list-inline-item footer__item zoom"><a href="#"><i class="fas fa-user-lock footer__icon"></i><p>Protection des données</p></a></li>
-                <li class="list-inline-item footer__item zoom"><a href="#"><i class="fas fa-cogs footer__icon"></i><p>CGV</p></a></li>
-                <li class="list-inline-item footer__item zoom"><a href="#"><i class="fas fa-cookie footer__icon"></i><p>Cookies</p></a></li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-balance-scale footer__icon"></i>
+                        <p>Mentions légales</p>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-user-lock footer__icon"></i>
+                        <p>Protection des données</p>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-cogs footer__icon"></i>
+                        <p>CGV</p>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-cookie footer__icon"></i>
+                        <p>Cookies</p>
+                    </a>
+                </li>
             </ul>
         </div>
         <div>
             <ul class="list-inline footer__div text-center">
-                <li class="list-inline-item footer__item zoom"><a href="#"><i class="fab fa-twitter-square footer__icon"></i></a></li>
-                <li class="list-inline-item footer__item zoom"><a href="#"><i class="fab fa-instagram-square footer__icon"></i></a></li>
-                <li class="list-inline-item footer__item zoom"><a href="#"><i class="fab fa-facebook footer__icon"></i></a></li>
-                <li class="list-inline-item footer__item zoom"><a href="#"><i class="fab fa-pinterest footer__icon"></i></a></li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fab fa-twitter-square footer__icon"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#"><i class="fab fa-instagram-square footer__icon"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#"><i class="fab fa-facebook footer__icon"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#"><i class="fab fa-pinterest footer__icon"></i>
+                    </a>
+                </li>
             </ul>
         </div>
     </footer>
