@@ -6,578 +6,62 @@
     <title>Oricamera - notre catalogue</title>
     <meta name="description" content="Oricamera, notre page catalogue qui regroupe tout nos camera vintage en vente sur notre site">
 
-    
+    <link rel="stylesheet" href="src/dist/style.css">
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
 
-<style>
-*
-{
-    box-sizing:border-box;
-    padding:0px;
-    margin:0px;
-}
-body
-{
-    width: 100%;
-    height: auto;
-    background-color: whitesmoke;
-    
-}
-
-/*     début du header     */
-
-.container-header
-{
-    margin:auto;
-    padding-left:15px;
-    padding-right:15px;
-}
-
-nav
-{
-    background-color: lightgrey; 
-    width: 100%;
-    height: 76px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    border-bottom: 5px solid black;
-}
-ul 
-{
-    list-style: none;
-}
-li 
-{
-    display: inline-block;
-    /*float:left;*/
-    padding:10px;
-    font-size:18px;
-}
-a
-{
-    color:black;
-    text-decoration:none;
-    font-weight:bold;
-}
-a:hover
-{
-    color:black;
-}
-#logo
-{
-    margin:20px 0 20px 20px;
-    font-family:sans-serif;
-    font-size:30px;
-    cursor:pointer;
-    color:black;
-    float:left;
-    height:45px;
-    display:block;
-}
-
-#logo:hover
-{
-    text-decoration:none;
-    color:black;
-    border-bottom: 1px solid black;
-}
-.links
-{
-    float:right;
-    padding:18px;
-}
-a .toggle
-{
-    display:none;
-}
-#menu-icon
-{
-    display:hidden;
-    width:40px;
-    height:40px;
-}
-.toggle > span {
-  display: block;
-  border-radius: 20px;
-  height: 5px;
-  width: 34px;
-  background: black;
-  margin: auto;
-  margin-bottom: 3px;
-}
-
-/*     fin du header     */
-/*     début du main     */
-main{
-    height: 100%;
-    margin: auto;
-    display: block;
-    justify-content: center;
-    align-items: center;
-}
-.container-principal{
-    background-color: grey;
-    height: 70vh;
-}
-.container-fluide{
-    background-color: chartreuse!important;
-    height: 70vh;
-    margin: auto;
-    padding: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 5px solid black;
-}
-.container-pricipal{
-    display: flex;
-    flex-direction: row;
-}
-.container {
-  background-color: #F2F2F2;
-  width: 100%;
-  margin: 20px 0 0 0;
-  padding-bottom: 20px;
-  display: block;
-}
-
-.container .cart {
-  width: 65%;
-  height: 260px;
-  border: solid 2px #F2F2F2;
-  border-radius: 20px;
-  -webkit-box-shadow: 6px 8px 9px #d9d9d9;
-  box-shadow: 6px 8px 9px #d9d9d9;
-  background-color: white;
-  position: relative;
-  margin: 20px auto;
-}
-.container .cart .menu-link {
-  text-decoration: none;
-  color: black;
-  font-size: 1rem;
-}
-.menu-link .warning {
-  position: absolute;
-  padding: 10px 26px;
-  background-color: red;
-  top: 12px;
-  right: 12px;
-  z-index: 1;
-  border-radius: 5px;
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.container .cart .menu-link .container-img {
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-}
-.container .cart .menu-link .name {
-  font-family: "Roboto", serif;
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-top: 0px;
-  padding: 0px 10px;
-}
-.container .cart .menu-link .price {
-  font-family: "Roboto", serif;
-  font-size: 1rem;
-  color: black;
-  padding:0px 10px;
-  margin-top: -25px;
-}
-.container .cart .btn {
-  border: none;
-  position: absolute;
-  bottom: 5px;
-  color: white;
-  background-color: black;
-  width: 60px;
-  right:5px;
-  display: flex;
-  justify-content: center;
-  margin: auto; 
-  transition: transform all 0.3s ease-out;
-}
-.container .cart .button {
-  font-size: 1em;
-  color: lightgray;
-  text-decoration: none;
-  cursor: pointer;
-  transition: transform all 0.3s ease-out;
-  padding: 0px auto;
-  margin: 0px auto;
-  display:flex;
-  justify-content: center;
-  width: 60px;
-  height: 30px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.container .cart .btn:hover, .container .cart .button:hover {
-  transform: scale(1.1);
-}
-.container .cart .btn-add {
-  border: none;
-  position: absolute;
-  right: 20px;
-  bottom: 35px;
-  color: white;
-  background-color: white;
-  margin-top: -15px;
-  margin-right: 20px;
-}
-.container .cart .btn-add .fa-cart-plus{
-  position: absolute;
-  left: 3px;
-  top: 6px;
-  width: 10px;
-  height: 10px;
-  margin-top: -15px;
-}
-.container .cart .btn-add .fas {
-  font-size: 1rem;
-  opacity: 1;
-  color: black;
-  margin-top: -15px;
-  transition: transform .2s ease;
-}
-.container .cart .btn-add .fas:hover {
-    transform: scale(1.1);
-}
-
-.cart .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.3);
-  transition: opacity 50ms;
-  visibility: hidden;
-  opacity: 0;
-  height: 600px;
-}
-.cart .overlay .popup h2{
-    color: snow;
-}
-.cart .overlay .popup .close{
-    color: snow;
-    transition: transform all 0.3s ease-out;
-}
-.cart .overlay .popup .close:hover{
-    transform: scale(1.3);
-}
-.cart .overlay .popup .content-overlay{
-    background-color: yellow;
-    height: 520px;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 0px 0%;
-  padding: 20px;
-  background: rgba(1,1,1,.6);
-  border-radius: 5px;
-  width: 100%;
-  height:600px;
-  position: relative;
-  transition: all 5s ease;
-  z-index:1100;
-}
-
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: red;
-}
-.popup .close:hover {
-  color: yellow;
-}
-.popup .content {
-  max-height: 100%;
-  overflow: auto;
-}
-    /*     fin du main     */
-/*     début du footer     */
-footer{
-    background-color: lightgrey;
-    margin-bottom: 0px;
-    border-bottom: 5px solid black;
-    text-align: center;
-    }
-
-/*     fin du footer     */
-.zoom {
-        transition: transform .2s ease;
-    }
-.zoom:hover{
-        transform: scale(1.1);
-    }
-/*     début des media-quries     */
-@media (min-width: 320px) and (max-width: 768px) {
-    #logo
-    {
-        font-size: 24px;
-    }
-    #menu-icon
-    {
-        display:inline-block;
-        width:40px;
-        height:40px;
-    }
-    .links
-    {
-        padding:20px 20px;
-    } 
-    .links ul 
-    {
-            
-        display:none;
-        position:absolute;
-        padding:20px;
-        background-color: rgba(255, 250, 250, .7);
-        top:76px;
-        right:0px;
-        width:100%;      
-    }
-    .links:hover ul
-    {
-        display:block;
-            
-    }
-    .links li    
-    {
-        text-align:center;
-        width:100%;
-        padding:15px 0;
-        margin:0;
-    }
-    .links li a{
-        font-size: 20px;
-    }
-    .accueil__title{
-        font-size: 24px;
-        
-    }
-    .accueil__description{
-        font-size: 14px;
-    }
-    .accueil{
-        padding: 10px 10px;
-    }
-    .accueil__description :nth-last-child(2)
-    {
-        margin: 0px auto 30px;
-    }
-    .accueil__description :nth-last-child(3)
-    {
-        margin: 0px auto 10px;
-    }
-    .accueil__description :nth-last-child(1)
-    {
-        font-size: 16px;
-        font-weight: bold;
-        color: rgb(83, 1, 1);
-    }
-    .list-inline-item{
-        margin: 0px;
-    }
-    .list-inline-item:not(:last-child) {
-        margin-right: 0rem; 
-    }
-
-    .productselect__box{
-        margin: 25% auto 0%;
-    }
-    .productselect__box .productselect__title{
-        font-size: 26px;
-        font-weight: bold;
-    }
-    .jumbotron {
-        padding: 0px;
-    }
-    #return-icon{
-        margin: 0px auto;
-    }
-    .container-pricipal {
-    display: flex;
-    flex-direction: column;
-    }
-    .container-pricipal .container {
-    background-color: lightgrey;
-    margin: 0; 
-    padding-bottom:0; 
-    }
-    .container-pricipal .container .cart {
-    width: 100%;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    }
-    .container-pricipal .container .cart .overlay{
-        top:-20px;
-    }
-    .container-pricipal .container .cart .overlay .popup{
-        width: 100%;
-        height: auto;
-        margin: 0px;
-        background-color: rgba(1,1,1,.9);
-    }
-    .container-pricipal .container .cart .overlay .popup h2{
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: snow;
-    }
-    .container-pricipal .container .cart .overlay .popup .close {
-    color: snow;
-    }
-    .container-pricipal .container .cart .overlay .popup .content-overlay{
-        width: 100%;
-        height: 425px;
-        margin: 5px 0px;
-        background-color: snow;
-    }
-    .container-pricipal .container .cart .overlay .popup .content-overlay .cart-overlay .menu-link .warning {
-        position: absolute;
-        padding: 10px 26px;
-        background-color: #ff0000b3;
-        top: 75px;
-        right: 40px;
-        z-index: 1;
-        border-radius: 5px;
-        color: black;
-        font-size: 14px;
-        font-weight: bold;
-    }
-    .container-pricipal .container .cart .overlay .popup .content-overlay .btn-add{
-        margin-right: 12%;
-        margin-bottom: 3%;
-    }
-
-
-    .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-    width: 100%;
-    padding-right: 5px;
-    padding-left: 5px;
-    }
-
-    footer ul li{
-        padding: 5px;
-    }
-    .zoom {
-        transition: transform .2s ease;
-    }
-    .zoom:hover{
-        transform: scale(1.5);
-    }
-    footer ul li a{
-        font-size: 10px;
-        font-weight: bold;
-    }
-    .fa-twitter-square, .fa-instagram-square, 
-    .fa-facebook, .fa-pinterest, .fas{
-        font-size: 18px;
-    }
-}
-@media (min-width:769px){
-    .menu-link .warning {
-        position: absolute;
-        top: 80px;
-        right: 40px;
-    }
-    .cart .overlay{
-        width: 135%;
-        display: flex;
-        justify-content: center;
-        margin: 0px auto;
-    }
-    .cart .overlay .popup{
-        width:100%;
-    }
-    .container .cart .btn-add .fa-cart-plus{
-        left: -20px;
-        top: 0px;
-    }
-    
-}
-
-
-
-@media screen and (max-width: 769px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
-}
-</style>  
-
 </head>
 
-<body>
+<body class="background">
     <header>
+
         <nav>
-            <div class="container-header">  
-                <a href="#" id="logo">OriCamera</a>
+        
+            <div class="container">
+                
+                 <a href="#" class="zoom" id="logo">OriCamera</a>
+                
                 <div class="links">
+        
                     <a href="#">
-                    <button class="toggle image" id="menu-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        </button>
-                    </a>
+                       <button class="toggle image" id="menu-icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </button>
+                   </a>
+        
                     <ul>
-                        <li><a href="./index.html">Accueil</a></li>
-                        <li class="checkout">
-                            <a href="#">
+        
+                        <li class="zoom"><a href="index.html">Accueil</a></li>
+                        <li class="zoom"><a href="catalogue.html">Catalogue</a></li>
+                        <li class="checkout zoom">
+                            <a href="panier.html">
                                 <i class="fa fa-shopping-cart red"></i>  Votre panier 
-                                <span class="badge badge-red">0</span>
+                                <span class="badge badge-red" id="nbrArticles">0</span>
                             </a>
                         </li>
+                    
                     </ul>
-                </div> 
-            </div>       
-        </nav> 
+        
+                    </div>
+                
+            </div>
+                
+        </nav>
+      
     </header>
 
-    <main class="container-fluid ">
-        <div class="row jumbotron productselect">
-            <div class="col-12 text-center productselect__box">
-                <h1 class="productselect__title">Cet article OriCamera vous intéresse ?</h1>
+    <main class="container-fluid main">
+
+        <div class="row jumbotron productSelect">
+            <div class="col-12 text-center productSelect__box">
+                <h1 class="productSelect__title">Cet article OriCamera vous intéresse ?</h1>
             </div>
         </div>
 
-        <a href="index.html" id="return-icon">
-            <i class="fas fa-arrow-left"></i>
+        <a href="index.html" id="return-icon" >
+            <i class="fas fa-arrow-left zoom"></i>
         </a>
       
         <div class="container-pricipal">
@@ -585,40 +69,43 @@ footer{
             <div class="container-fluid container">
 
                 <div class="cart">
+
                     <section class="menu-link">
+
                         <div class="content-img">
                             <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
                         </div>
                         <p class="name">Nikon</p>
                         <p class="price">499$</p>
                     </section>
+
                     <button class="btn">
                         <a class="button" href="#popup1">détails</a>
                     </button>
                         
-                <div id="popup1" class="overlay">
-                    <div class="popup">
-                        <h2>Fiche produit</h2>
-                        <a class="close" href="#">&times;</a>
-                        <div class="content-overlay">
-                            <div class="cart-overlay">
-                                <section class="menu-link">
-                                    <span class="warning">Plus que 2 en stock</span>
-                                    <div class="content-img">
-                                        <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
-                                    </div>
-                                    <p class="name">Nikon</p>
-                                    <p class="price">499$</p>
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, doloremque.</p>
-                                </section>
-                                <button class="btn-add">
-                                    <i class="fas fa-cart-plus"></i>
-                                </button>
+                    <div id="popup1" class="overlay">
+                        <div class="popup">
+                            <h2>Fiche produit</h2>
+                            <a class="close" href="#">&times;</a>
+                            <div class="content-overlay">
+                                <div class="cart-overlay">
+                                    <section class="menu-link">
+                                        <span class="warning">Plus que 2 en stock</span>
+                                        <div class="content-img">
+                                            <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                                        </div>
+                                        <p class="name">Nikon</p>
+                                        <p class="price">499$</p>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, doloremque.</p>
+                                    </section>
+                                    <button class="btn-add">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
             
                 <div class="cart">
@@ -733,24 +220,58 @@ footer{
             </div>
 
         </div>
+
     </main>
 
 
     <footer>
-        <div class="container-fluid">
+        <div >
             <ul class="list-inline footer__div text-center">
-                <li class="list-inline-item footer__item"><a href="#"><i class="fas fa-balance-scale footer__icon"></i><br/>Mentions légales</a></li>
-                <li class="list-inline-item footer__item"><a href="#"><i class="fas fa-user-lock footer__icon"></i><br/>Protection des données</a></li>
-                <li class="list-inline-item footer__item"><a href="#"><i class="fas fa-cogs footer__icon"></i><br/>CGV</a></li>
-                <li class="list-inline-item footer__item"><a href="#"><i class="fas fa-cookie footer__icon"></i><br/>Cookies</a></li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-balance-scale footer__icon"></i>
+                        <p>Mentions légales</p>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-user-lock footer__icon"></i>
+                        <p>Protection des données</p>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-cogs footer__icon"></i>
+                        <p>CGV</p>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-cookie footer__icon"></i>
+                        <p>Cookies</p>
+                    </a>
+                </li>
             </ul>
         </div>
-        <div class="container-fluid">
+        <div>
             <ul class="list-inline footer__div text-center">
-                <li class="list-inline-item footer__item"><a href="#"><i class="fab fa-twitter-square footer__icon"></i></a></li>
-                <li class="list-inline-item footer__item"><a href="#"><i class="fab fa-instagram-square footer__icon"></i></a></li>
-                <li class="list-inline-item footer__item"><a href="#"><i class="fab fa-facebook footer__icon"></i></a></li>
-                <li class="list-inline-item footer__item"><a href="#"><i class="fab fa-pinterest footer__icon"></i></a></li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fab fa-twitter-square footer__icon"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#"><i class="fab fa-instagram-square footer__icon"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#"><i class="fab fa-facebook footer__icon"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#"><i class="fab fa-pinterest footer__icon"></i>
+                    </a>
+                </li>
             </ul>
         </div>
     </footer>
