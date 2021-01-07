@@ -4,91 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panier</title>
-    <link rel="stylesheet" href="./src/dist/style.css">
-<style>
 
+    <link rel="stylesheet" href="./src/dist/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+<style>
+.main{
+  height: 75vh;
+  margin: 75px auto;
+}
 /* Début du panier tableau avec produits */
 #app{
     margin: 5% 5%;
-    background-color: lightgrey;
+    background-color: snow;
 }
 
 /* Section servant de "header" à l'app*/
-section .container-header {
+#app .container-header {
   margin-bottom: 1.5rem;
 }
-section .menu {
-  color: #7d7d7d;
+#app .container-header .menu {
+  color: red;
 }
-
-section .menub li {
+#app .container-header .menu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+#app .container-header .menu li {
   float: left;
   padding: 0 6px;
   height: 20px;
   line-height: 20px;
 }
 
-section .menu li:first-child {
+#app .container-header .menu li:first-child {
   padding-left: 2px;
 }
 
-section .menu li:not(:last-child)::after {
+#app .container-header .menu li:not(:last-child)::after {
   content: " \276f";
   padding-left: 8px;
 }
-section .count {
+#app .container-header .count {
   float: right;
   color: #333333;
   height: 20px;
   line-height: 20px;
 }
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
+
 
 </style>
 </head>
+
 <body>
+    
   <header>
 
-    <nav>
+      <nav>
+      
+          <div class="header">
+              
+               <a href="#" class="zoom" id="logo">OriCamera</a>
+              
+              <div class="links">
+      
+                  <a href="#">
+                     <button class="toggle image" id="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                 </a>
+      
+                  <ul>
+      
+                      <li class="zoom"><a href="index.html">Accueil</a></li>
+                      <li class="zoom"><a href="catalogue.html">Catalogue</a></li>
+                      <li class="checkout zoom">
+                          <a href="confirmation-commande.html">
+                              <i class="fa fa-shopping-cart red"></i>  Votre panier 
+                              <span class="badge badge-red" id="nbrArticles">0</span>
+                          </a>
+                      </li>
+                  
+                  </ul>
+      
+              </div>
+              
+          </div>
+              
+      </nav>
     
-        <div class="header">
-            
-             <a href="#" class="zoom" id="logo">OriCamera</a>
-            
-            <div class="links">
-    
-                <a href="#">
-                   <button class="toggle image" id="menu-icon">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                  </button>
-               </a>
-    
-                <ul>
-    
-                    <li class="zoom"><a href="index.html">Accueil</a></li>
-                    <li class="zoom"><a href="catalogue.html">Catalogue</a></li>
-                    <li class="checkout zoom">
-                        <a href="confirmation-commande.html">
-                            <i class="fa fa-shopping-cart red"></i>  Votre panier 
-                            <span class="badge badge-red" id="nbrArticles">0</span>
-                        </a>
-                    </li>
-                
-                </ul>
-    
-            </div>
-            
-        </div>
-            
-    </nav>
-  
-</header>
+  </header>
 
     <main class="main">
 
@@ -96,7 +104,8 @@ ul {
 
             <section class="container-header"> <!-- Section servant de "header" à l'app -->
                 <h1>Votre Panier</h1>
-                    <ul class="menu">
+
+                <ul class="menu">
                         <li>
                             <a href="index.html">Accueil</a>
                         </li>
@@ -104,12 +113,10 @@ ul {
                             <a href="catalogue.html">Catalogue</a>
                         </li>
                         <li>
-                            <a href="#">Panier</a>
+                            <a href="panier.html">Panier</a>
                         </li>
-                        <li>
-                          <a href="./confirmation-commande.html">Confirmation</a>
-                      </li>
-                    </ul>
+                </ul>
+
                 <span class="count">Votre panier</span>
             </section>
           
@@ -144,8 +151,8 @@ ul {
               </ul>
               </div>
               <div v-else class="empty-product">
-                <h3>There are no products in your cart.</h3>
-                <button>Shopping now</button>
+                <h3>Il n'y a pas de produit dans votre panier</h3>
+                <button">Voir nos produits</button>
               </div>
             </section>
             <!-- End Product List -->

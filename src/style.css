@@ -122,7 +122,6 @@ main {
   height: 100%;
   margin: auto;
   padding: 0px;
-  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
