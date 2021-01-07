@@ -386,6 +386,20 @@ footer ul li a:hover {
   opacity: 1;
 }
 
+/*---------------page confirmation commande------------------*/
+.contenaire-confirm {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+.contenaire-confirm .confirm .text-center {
+  margin: 0px auto;
+}
+.contenaire-confirm .confirm .text-center .confirm__details .confirmation-price, .contenaire-confirm .confirm .text-center .confirm__details .confirmation-ref {
+  font-size: 1.3em;
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
   header {
     margin: -10px auto;
@@ -486,5 +500,13 @@ footer ul li a:hover {
   }
   footer ul li .zoom:hover {
     transform: scale(1.5);
+  }
+
+  .contenaire-confirm .confirm {
+    padding: 0px;
+  }
+  .contenaire-confirm .confirm .text-center .confirm__title {
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 }

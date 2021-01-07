@@ -425,6 +425,25 @@ footer{
   visibility: visible;
   opacity: 1;
 }
+/*---------------page confirmation commande------------------*/
+.contenaire-confirm {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+
+  .confirm .text-center {
+    margin: 0px auto;
+
+    .confirm__details {
+      .confirmation-price, .confirmation-ref {
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+
+
 
 @media (min-width: 320px) and (max-width: 768px) {
   header {
@@ -467,7 +486,7 @@ footer{
           }
         }
     }
-    main .accueil {
+  main .accueil {
         .intro__box {
           padding-top:auto;
           margin: -90px auto auto auto;
@@ -502,22 +521,22 @@ footer{
             }
           }
         }
+  }
+  .main .productSelect .productSelect__box {
+    margin: 50px auto 0px;
+    .productSelect__title{
+      font-size: 1.3rem;
+      font-weight: 700;
     }
-    .main .productSelect .productSelect__box {
-      margin: 50px auto 0px;
-      .productSelect__title{
-        font-size: 1.3rem;
-        font-weight: 700;
-      }
-    }
+  }
     
-    .main .container-pricipal .content-cart{
-      flex-direction: column;
-    }
-    .content-cart .cart .btn{
-      right: -75%;
-    }
-    footer ul {
+  .main .container-pricipal .content-cart{
+    flex-direction: column;
+  }
+  .content-cart .cart .btn{
+    right: -75%;
+  }
+  footer ul {
         li {
           padding: 5px;
       
@@ -542,5 +561,14 @@ footer{
             transform: scale(1.5);
           }
         }
+  }
+
+  .contenaire-confirm .confirm {
+    padding: 0px;
+  
+    .text-center .confirm__title {
+      font-size: 1.5rem;
+      font-weight: bold;
     }
+  }
 }
