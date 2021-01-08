@@ -20,7 +20,7 @@ body {
   transition: transform 0.2s ease;
 }
 .zoom:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 /*     Le header est identique sur toutes les pages     */
@@ -63,7 +63,7 @@ nav .header .links ul li a:hover {
   color: black;
 }
 nav .header #logo {
-  margin: 20px 0 20px 0px;
+  margin: 8px 0 10px 0px;
   font-family: sans-serif;
   font-size: 30px;
   cursor: pointer;
@@ -71,6 +71,17 @@ nav .header #logo {
   float: left;
   height: 45px;
   display: block;
+}
+nav .header #logo img {
+  width: 170px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(70%);
+  filter: grayscale(100%);
+  transform: scale(1.1);
+  transition: ease 0.2s;
 }
 nav .header #logo:hover {
   text-decoration: none;
@@ -81,15 +92,15 @@ nav .header .links {
   float: right;
   padding: 18px;
 }
-nav .header .links a .toggle {
+nav .header .links .toggle {
   display: none;
 }
-nav .header .links a #menu-icon {
-  display: hidden;
+nav .header .links #menu-icon {
+  display: none;
   width: 40px;
   height: 40px;
 }
-nav .header .links a .toggle > span {
+nav .header .links .toggle > span {
   display: block;
   border-radius: 20px;
   height: 5px;
@@ -111,13 +122,13 @@ main {
 main .accueil {
   padding: 0px 0px 30px 0px;
   margin: auto;
-  height: 100%;
+  height: 90vh;
   width: 100%;
   background: url("https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   background-attachment: scroll;
-  filter: sepia(90%);
   filter: contrast(70%);
 }
 main .accueil .space__title {
@@ -201,7 +212,7 @@ footer ul li a:hover {
   overflow-x: scroll;
 }
 .main .container-principal {
-  height: content;
+  height: max-content;
   display: flex;
   flex-direction: row;
   width: 90%;
@@ -309,7 +320,6 @@ footer ul li a:hover {
   width: 100%;
   height: 600px;
   position: relative;
-  transition: all 5s ease;
   z-index: 1100;
 }
 .cart .overlay .popup h2 {
@@ -321,18 +331,19 @@ footer ul li a:hover {
 .cart .overlay .popup .close {
   display: flex;
   justify-content: flex-end;
-  transition: transform all 0.3s ease-out;
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 90%;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
   color: red;
+  cursor: pointer;
+  width: max-content;
 }
 .cart .overlay .popup .close:hover {
-  transform: scale(1.3);
+  color: snow;
 }
 .cart .overlay .popup .content {
   max-height: 100%;
@@ -371,7 +382,6 @@ footer ul li a:hover {
   top: 500px;
   bottom: 0px;
   right: 0px;
-  color: white;
   background-color: white;
   height: 40px;
   width: 40px;
@@ -407,7 +417,7 @@ footer ul li a:hover {
     padding: 20px 20px;
     float: right;
   }
-  header nav .header .links a #menu-icon {
+  header nav .header .links #menu-icon {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -432,7 +442,7 @@ footer ul li a:hover {
   }
 
   main .accueil .intro__box {
-    padding-top: auto;
+    padding-top: 10px;
     margin: -90px auto auto auto;
     height: 100%;
   }

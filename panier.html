@@ -65,17 +65,15 @@
       
           <div class="header">
               
-               <a href="#" class="zoom" id="logo">OriCamera</a>
+            <a href="index.html" class="zoom" id="logo"><img src="./src/img/logo.png" alt=""></a>
               
-              <div class="links">
-      
-                  <a href="#">
-                     <button class="toggle image" id="menu-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                 </a>
+            <div class="links">
+           
+              <button class="toggle image" id="menu-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </button> 
       
                   <ul>
       
@@ -122,25 +120,25 @@
           
             <!-- Product List -->
             <section class="container">
-              <div v-if="products.length > 0">
+              <div >
                 <ul class="products">
-                <li class="row" v-for="(product, index) in products">
+                <li class="row" >
                   <div class="col left">
                     <div class="thumbnail">
                       <a href="#">
-                        <img :src="#" :alt="#" />
+                        <img src="#" alt="#" />
                       </a>
                     </div>
                     <div class="detail">
-                      <div class="name"><a href="#"> product.name </a></div>
-                      <div class="description"> product.description </div>
-                      <div class="price"> product.price | currencyFormatted </div>
+                      <div class="name"><a href=""> nom du produit </a></div>
+                      <div class="description"> description du produit </div>
+                      <div class="price"> prix du produit</div>
                     </div>
                   </div>
           
                   <div class="col right">
                     <div class="quantity">
-                      <input type="number" class="quantity" step="1" :value="product.quantity" @input="updateQuantity(index, $event)" @blur="checkQuantity(index, $event)" />
+                      <input type="number" class="quantity" step="1" value="product.quantity" input="updateQuantity(index, $event)" blur="checkQuantity(index, $event)" />
                     </div>
                     
                     <div class="remove">
@@ -150,7 +148,7 @@
                 </li>
               </ul>
               </div>
-              <div v-else class="empty-product">
+              <div class="empty-product">
                 <h3>Il n'y a pas de produit dans votre panier</h3>
                 <button">Voir nos produits</button>
               </div>
@@ -158,18 +156,14 @@
             <!-- End Product List -->
             
             <!-- Summary -->
-            <section class="container" v-if="products.length > 0">
-              <div class="promotion">
-                <label for="promo-code">Have A Promo Code?</label>
-                <input type="text" id="promo-code" v-model="promoCode" /> <button type="button" @click="checkPromoCode"></button>
-              </div>
-          
+            <section class="container">
+                        
               <div class="summary">
                 <ul>
-                  <li>Subtotal <span>{{ subTotal | currencyFormatted }}</span></li>
-                  <li v-if="discount > 0">Discount <span>{{ discountPrice | currencyFormatted }}</span></li>
-                  <li>Tax <span>{{ tax | currencyFormatted }}</span></li>
-                  <li class="total">Total <span>{{ totalPrice | currencyFormatted }}</span></li>
+                  <li>Subtotal <span></span></li>
+                  <li v-if="discount > 0">Discount <span></span></li>
+                  <li>Tax <span></span></li>
+                  <li class="total">Total <span></span></li>
                 </ul>
               </div>
           
