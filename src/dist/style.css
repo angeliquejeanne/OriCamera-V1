@@ -219,7 +219,7 @@ footer ul li a:hover {
 }
 .content-cart .cart {
   width: 100%;
-  height: 260px;
+  height: 350px;
   border: solid 2px #F2F2F2;
   border-radius: 20px;
   -webkit-box-shadow: 6px 8px 9px #d9d9d9;
@@ -235,7 +235,7 @@ footer ul li a:hover {
 }
 .content-cart .cart .menu-link .container-img {
   width: 100%;
-  height: 200px;
+  height: 280px;
   -o-object-fit: cover;
   object-fit: cover;
   border-top-right-radius: 20px;
@@ -263,7 +263,7 @@ footer ul li a:hover {
   background-color: black;
   width: 60px;
   height: 30px;
-  right: -85%;
+  right: -80%;
   bottom: -80%;
   display: flex;
   justify-content: center;
@@ -288,55 +288,14 @@ footer ul li a:hover {
   transform: scale(1.1);
 }
 
-.menu-link .warning {
-  position: absolute;
-  padding: 10px 20px;
-  background-color: rgba(119, 2, 2, 0.8);
-  right: 32px;
-  margin-top: 10px;
-  z-index: 1;
-  border-radius: 5px;
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.btn-add {
-  border: none;
-  position: absolute;
-  right: 40px;
-  bottom: 45px;
-  color: white;
-  background-color: white;
-}
-.btn-add .fa-cart-plus {
-  position: absolute;
-  left: 3px;
-  top: 6px;
-  width: 10px;
-  height: 10px;
-  margin-top: -15px;
-}
-.btn-add .fas {
-  font-size: 1rem;
-  opacity: 1;
-  color: black;
-  margin-top: -15px;
-  transition: transform 0.2s ease;
-}
-.btn-add .fas:hover {
-  transform: scale(1.1);
-  color: red;
-}
-
 .cart .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.3);
-  transition: opacity 50ms;
+  background: black;
+  transition: opacity 20ms;
   visibility: hidden;
   opacity: 0;
   height: 600px;
@@ -345,7 +304,7 @@ footer ul li a:hover {
 .cart .overlay .popup {
   margin: 0px 0%;
   padding: 5px;
-  background: rgba(1, 1, 1, 0.6);
+  background: #010101;
   border-radius: 5px;
   width: 100%;
   height: 600px;
@@ -357,16 +316,20 @@ footer ul li a:hover {
   color: snow;
   margin-top: 0;
   font-family: Tahoma, Arial, sans-serif;
+  text-align: center;
 }
 .cart .overlay .popup .close {
-  color: snow;
+  display: flex;
+  justify-content: flex-end;
   transition: transform all 0.3s ease-out;
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 30px;
+  font-size: 16px;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
+  color: red;
 }
 .cart .overlay .popup .close:hover {
   transform: scale(1.3);
@@ -376,13 +339,47 @@ footer ul li a:hover {
   overflow: auto;
 }
 .cart .overlay .popup .content-overlay {
-  background-color: snow;
+  background-color: lightgrey;
   height: 520px;
 }
 
 .overlay:target {
   visibility: visible;
   opacity: 1;
+}
+
+.overlay .popup .content-overlay .cart-overlay .menu-link .warning {
+  position: absolute;
+  padding: 10px 26px;
+  background-color: rgba(119, 2, 2, 0.9);
+  display: flex;
+  justify-content: flex-end;
+  left: 5%;
+  top: 50px;
+  right: 0px;
+  z-index: 1;
+  border-radius: 5px;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  width: 170px;
+}
+.overlay .popup .content-overlay .cart-overlay .btn-add {
+  border: none;
+  position: absolute;
+  left: 500px;
+  top: 500px;
+  bottom: 0px;
+  right: 0px;
+  color: white;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.overlay .popup .content-overlay .cart-overlay .btn-add .fas {
+  color: black;
 }
 
 /*---------------page confirmation commande------------------*/
@@ -507,5 +504,89 @@ footer ul li a:hover {
   .contenaire-confirm .confirm .text-center .confirm__title {
     font-size: 1.5rem;
     font-weight: bold;
+  }
+
+  .overlay .popup .close i {
+    font-size: 15px;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .overlay .popup .content-overlay .cart-overlay .menu-link .warning {
+    left: 15%;
+    top: 12%;
+  }
+  .overlay .popup .content-overlay .cart-overlay .btn-add {
+    left: 85%;
+    top: 530px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .cart-overlay .btn-add i {
+    font-size: 15px;
+  }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  .overlay .popup .content-overlay .cart-overlay .menu-link .warning {
+    left: 25%;
+    top: 12%;
+  }
+  .overlay .popup .content-overlay .cart-overlay .btn-add {
+    left: 85%;
+    top: 530px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .cart-overlay .btn-add i {
+    font-size: 15px;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .overlay .popup .content-overlay .cart-overlay .menu-link .warning {
+    left: 38%;
+    top: 12%;
+  }
+  .overlay .popup .content-overlay .cart-overlay .btn-add {
+    left: 85%;
+    top: 530px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .cart-overlay .btn-add i {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .overlay .popup .content-overlay .cart-overlay .menu-link .warning {
+    left: 35%;
+    top: 12%;
+  }
+  .overlay .popup .content-overlay .cart-overlay .btn-add {
+    left: 80%;
+    top: 530px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .cart-overlay .btn-add i {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  .overlay .popup .content-overlay .cart-overlay .menu-link .warning {
+    left: 38%;
+    top: 12%;
+  }
+  .overlay .popup .content-overlay .cart-overlay .btn-add {
+    left: 90%;
+    top: 530px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .cart-overlay .btn-add i {
+    font-size: 15px;
   }
 }
