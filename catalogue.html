@@ -22,17 +22,15 @@
         
             <div class="header">
                 
-                 <a href="#" class="zoom" id="logo">OriCamera</a>
+                <a href="index.html" class="zoom" id="logo"><img src="./src/img/logo.png" alt=""></a>
                 
                 <div class="links">
-        
-                    <a href="#">
-                       <button class="toggle image" id="menu-icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                      </button>
-                   </a>
+           
+                    <button class="toggle image" id="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button> 
         
                     <ul>
         
@@ -57,11 +55,11 @@
 
     <main class="container-fluid main">
 
-        <div class="row jumbotron productSelect">
+        <section class="row jumbotron productSelect">
             <div class="col-12 text-center productSelect__box">
                 <h1 class="productSelect__title">Cet article OriCamera vous intéresse ?</h1>
             </div>
-        </div>
+        </section>
 
         <a href="index.html" id="return-icon" >
             <i class="fas fa-arrow-left zoom"></i>
@@ -73,20 +71,20 @@
 
                 <div class="cart">
 
-                    <section class="menu-link">
+                    <div class="menu-link">
 
                         <div class="content-img">
                             <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
                         </div>
                         <p class="name">Nikon</p>
                         <p class="price">499$</p>
-                    </section>
+                    </div>
 
-                    <button class="btn">
+                    <div class="btn">
                         <a class="button" href="#popup1">détails</a>
-                    </button>
+                    </div>
                         
-                    <div id="popup1" class="overlay">
+                    <section id="popup1" class="overlay">
 
                         <div class="popup">
                             <h2>Fiche produit</h2>
@@ -101,56 +99,68 @@
                                         <div class="content-img">
                                             <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
                                         </div>
-                                        <p class="name">Nikon</p>
+                                        <h3 class="name">Nikon</h3>
                                         <p class="price">499$</p>
                                         <p>Lorem ipsum dolor sit amet.</p>
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, doloremque.</p>
                                     </section>
 
                                     <button class="btn-add zoom">
-                                        <i class="fas fa-cart-plus"></i>
+                                        <i class="fas fa-cart-plus zoom"></i>
                                     </button>
 
                                 </div>
                             </div>
                         </div>
                         
-                    </div>
+                    </section>
                 </div>
             
                 <div class="cart">
-                    <section class="menu-link">
+
+                    <div class="menu-link">
+
                         <div class="content-img">
                             <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
                         </div>
                         <p class="name">Nikon</p>
                         <p class="price">499$</p>
+                    </div>
+
+                    <div class="btn">
+                        <a class="button" href="#popup2">détails</a>
+                    </div>
+                        
+                    <section id="popup2" class="overlay">
+
+                        <div class="popup">
+                            <h2>Fiche produit</h2>
+                            <a class="close zoom" href="#">
+                                <i class="far fa-times-circle"></i>
+                            </a>
+                            <div class="content-overlay">
+                                <div class="cart-overlay">
+
+                                    <section class="menu-link">
+                                        <span class="warning">Plus que 2 en stock</span>
+                                        <div class="content-img">
+                                            <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                                        </div>
+                                        <h3 class="name">Nikon</h3>
+                                        <p class="price">499$</p>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, doloremque.</p>
+                                    </section>
+
+                                    <button class="btn-add zoom">
+                                        <i class="fas fa-cart-plus zoom"></i>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                        
                     </section>
-                    <button class="btn">
-                        <a class="button" href="#popup1">détails</a>
-                    </button>
-                    
-                    <div id="popup1" class="overlay">
-                    <div class="popup">
-                    <h2>Fiche produit</h2>
-                    <a class="close" href="#">&times;</a>
-                    <div class="content">
-                    <div class="cart">
-                    <section class="menu-link">
-                    <span class="warning">Plus que 2 en stock</span>
-                    <div class="content-img">
-                    <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
-                    </div>
-                    <p class="name">Nikon</p>
-                    <p class="price">499$</p>
-                    </section>
-                    <button class="btn-add">
-                    <i class="fas fa-cart-plus"></i>
-                    </button>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
                 </div> 
 
             </div>
@@ -158,76 +168,97 @@
             <div class="container-fluid content-cart">
 
                 <div class="cart">
-                    <section class="menu-link">
+
+                    <div class="menu-link">
+
                         <div class="content-img">
                             <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
                         </div>
                         <p class="name">Nikon</p>
                         <p class="price">499$</p>
-                    </section>
-                    <button class="btn">
-                        <a class="button" href="#popup1">détails</a>
-                    </button>
-                    
-                    <div id="popup1" class="overlay">
-                        <div class="popup">
-                        <h2>Fiche produit</h2>
-                        <a class="close" href="#">&times;</a>
-                        <div class="content">
-                        <div class="cart">
-                        <section class="menu-link">
-                        <span class="warning">Plus que 2 en stock</span>
-                        <div class="content-img">
-                        <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
-                        </div>
-                        <p class="name">Nikon</p>
-                        <p class="price">499$</p>
-                        </section>
-                        <button class="btn-add">
-                        <i class="fas fa-cart-plus"></i>
-                        </button>
-                        </div>
-                        </div>
-                        </div>
                     </div>
-                </div>
-            
-                <div class="cart">
-                    <section class="menu-link">
-                        <div class="content-img">
-                            <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
-                        </div>
-                        <p class="name">Nikon</p>
-                        <p class="price">499$</p>
-                    </section>
-                    <button class="btn">
-                        <a class="button" href="#popup1">détails</a>
-                    </button>
-                    
-                    <div id="popup1" class="overlay">
+
+                    <div class="btn">
+                        <a class="button" href="#popup3">détails</a>
+                    </div>
+                        
+                    <section id="popup3" class="overlay">
+
                         <div class="popup">
-                        <h2>Fiche produit</h2>
-                        <a class="close" href="#">&times;</a>
-                            <div class="content">
-                                <div class="cart">
+                            <h2>Fiche produit</h2>
+                            <a class="close zoom" href="#">
+                                <i class="far fa-times-circle"></i>
+                            </a>
+                            <div class="content-overlay">
+                                <div class="cart-overlay">
 
                                     <section class="menu-link">
-                                    <span class="warning">Plus que 2 en stock</span>
-                                    <div class="content-img">
-                                    <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
-                                    </div>
-                                    <p class="name">Nikon</p>
-                                    <p class="price">499$</p>
+                                        <span class="warning">Plus que 2 en stock</span>
+                                        <div class="content-img">
+                                            <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                                        </div>
+                                        <h3 class="name">Nikon</h3>
+                                        <p class="price">499$</p>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, doloremque.</p>
                                     </section>
 
-                                    <button class="btn-add">
-                                        <i class="fas fa-cart-plus"></i>
+                                    <button class="btn-add zoom">
+                                        <i class="fas fa-cart-plus zoom"></i>
                                     </button>
 
                                 </div>
                             </div>
                         </div>
+                        
+                    </section>
+                </div>
+            
+                <div class="cart">
+
+                    <div class="menu-link">
+
+                        <div class="content-img">
+                            <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                        </div>
+                        <p class="name">Nikon</p>
+                        <p class="price">499$</p>
                     </div>
+
+                    <div class="btn">
+                        <a class="button" href="#popup4">détails</a>
+                    </div>
+                        
+                    <section id="popup4" class="overlay">
+
+                        <div class="popup">
+                            <h2>Fiche produit</h2>
+                            <a class="close zoom" href="#">
+                                <i class="far fa-times-circle"></i>
+                            </a>
+                            <div class="content-overlay">
+                                <div class="cart-overlay">
+
+                                    <section class="menu-link">
+                                        <span class="warning">Plus que 2 en stock</span>
+                                        <div class="content-img">
+                                            <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+                                        </div>
+                                        <h3 class="name">Nikon</h3>
+                                        <p class="price">499$</p>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, doloremque.</p>
+                                    </section>
+
+                                    <button class="btn-add zoom">
+                                        <i class="fas fa-cart-plus zoom"></i>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </section>
                 </div> 
 
             </div>
