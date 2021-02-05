@@ -1,0 +1,271 @@
+.main-aside {
+    height: 100%;
+    margin: auto;
+    padding: 0px;
+    overflow-x: scroll;
+}
+
+@media screen and (min-width: 320px) {
+    .main-aside {
+        margin: -97px auto 0px;
+        overflow-x: scroll;
+        height: 100%;
+    }
+    .main-aside .container {
+        margin: 0px auto 0px;
+        padding: 150px 10px 0px;
+    }
+    .main-aside .container .productSelect {
+        background: rgba(255, 250, 250, 0.4);
+        margin: 20px auto 20px;
+        padding: 0px auto;
+    }
+    .main-aside .container .productSelect .productSelect_box .productSelect_title {
+        font-size: 1rem;
+    }
+    .main-aside .container .table {
+        background: rgba(255, 250, 250, 0.6);
+        margin: 30px auto 30px;
+        padding: 0px auto;
+        overflow-y: scroll;
+    }
+    .main-aside .container .table thead tr th {
+        font-size: .8rem;
+    }
+    .main-aside .container .table tbody tr td {
+        font-size: .8rem;
+    }
+    .main-aside .container .table tfoot tr td {
+        font-size: .9rem;
+        font-weight: 700;
+    }
+    .main-aside .container .text-center .btn-add-to-cart {
+        font-size: 1rem;
+        font-weight: 700;
+        background-color: snow;
+        border: none;
+        color: black;
+        cursor: pointer;
+    }
+    .main-aside .container .text-center .btn-add-to-cart:hover {
+        background-color: black;
+        color: snow;
+    }
+}
+@media screen and (min-width: 375px) {
+    .main-aside {
+        margin: -97px auto 0px;
+        overflow-x: scroll;
+        height: 100%;
+    }
+    .main-aside .container {
+        margin: 0px auto 0px;
+        padding: 190px 10px 0px;
+    }
+    .main-aside .container .productSelect {
+        background: rgba(255, 250, 250, 0.4);
+        margin: 20px auto 20px;
+        padding: 0px auto;
+    }
+}
+@media screen and (min-width: 411px) {
+    .main-aside {
+        margin: -97px auto 0px;
+        overflow-x: scroll;
+        height: 100%;
+    }
+    .main-aside .container {
+        margin: 0px auto 0px;
+        padding: 210px 10px 0px;
+    }
+    .main-aside .container .productSelect {
+        background: rgba(255, 250, 250, 0.4);
+        margin: 20px auto 20px;
+        padding: 0px auto;
+    }
+}
+@media screen and (min-width: 568px) and (orientation:landscape) {
+    .main-aside {
+        margin: -97px auto 0px;
+        overflow-x: scroll;
+        height: 100%;
+    }
+    .main-aside .container {
+        margin: 0px auto 0px;
+        padding: 150px 10px 0px;
+    }
+    .main-aside .container .productSelect {
+        background: rgba(255, 250, 250, 0.4);
+        margin: 20px auto 20px;
+        padding: 0px auto;
+    }
+}
+@media screen and (min-width: 667px) and (orientation:landscape) {
+    .main-aside {
+        margin: -97px auto 0px;
+        overflow-x: scroll;
+        height: 100%;
+    }
+    .main-aside .container {
+        margin: 0px auto 0px;
+        padding: 150px 10px 0px;
+    }
+    .main-aside .container .productSelect {
+        background: rgba(255, 250, 250, 0.4);
+        margin: 20px auto 20px;
+        padding: 0px auto;
+    }
+
+}
+@media screen and (min-width: 768px) {
+    .main-aside {
+        margin: -97px auto 0px;
+        overflow-x: scroll;
+        height: 100%;
+    }
+    .main-aside .container {
+        margin: 0px auto 0px;
+        padding: 210px 10px 0px;
+    }
+    .main-aside .container .productSelect {
+        background: rgba(255, 250, 250, 0.4);
+        margin: 20px 40px 20px;
+        padding: 0px auto;
+    }
+    .main-aside .container .productSelect .productSelect_box .productSelect_title {
+        font-size: 1.6rem;
+    }
+    .main-aside .container .table {
+        background: rgba(255, 250, 250, 0.6);
+        margin: 30px auto 30px;
+        padding: 0px auto;
+    }
+    .main-aside .container .table thead tr th {
+        font-size: 1rem;
+    }
+    .main-aside .container .table tbody tr td {
+        font-size: 1rem;
+    }
+    .main-aside .container .table tfoot tr td {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .main-aside .container .text-center .btn-add-to-cart {
+        font-size: 1.3rem;
+        font-weight: 700;
+        background-color: snow;
+        border: none;
+        color: black;
+        cursor: pointer;
+    }
+    .main-aside .container .text-center .btn-add-to-cart:hover {
+        background-color: black;
+        color: snow;
+    }
+}
+@media screen and (min-width: 800px) {
+    .main-aside {
+        margin: -132px auto 0px;
+        overflow-x: scroll;
+        height: 100%;
+    }
+    .main-aside .container {
+        margin: 0px auto 0px;
+        padding: 230px 10px 0px;
+    }
+    .main-aside .container .productSelect {
+        background: rgba(255, 250, 250, 0.4);
+        margin: 40px 40px 40px;
+        padding: 0px auto;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .main-aside {
+        margin: -132px auto 0px;
+        overflow-x: scroll;
+        height: 100%;
+    }
+    .main-aside .container {
+        margin: 0px auto 0px;
+        padding: 290px 10px 0px;
+    }
+    .main-aside .container .productSelect {
+        background: rgba(255, 250, 250, 0.3);
+        margin: 20px 50px 20px;
+    }
+    .main-aside .container .productSelect .productSelect_box .productSelect_title {
+        font-size: 1.6rem;
+    }
+    .main-aside .container .table {
+        background: rgba(255, 250, 250, 0.6);
+        margin: 80px auto 80px;
+        padding: 0px auto;
+    }
+    .main-aside .container .table thead tr th {
+        font-size: 1rem;
+    }
+    .main-aside .container .table tbody tr td {
+        font-size: 1rem;
+    }
+    .main-aside .container .table tfoot tr td {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .main-aside .container .text-center .btn-add-to-cart {
+        font-size: 1.3rem;
+        font-weight: 700;
+        background-color: snow;
+        border: none;
+        color: black;
+        cursor: pointer;
+    }
+    .main-aside .container .text-center .btn-add-to-cart:hover {
+        background-color: black;
+        color: snow;
+    }
+}
+@media screen and (min-width: 1024px) and (orientation:landscape) {
+    .main-aside {
+        margin: -132px auto 0px;
+        overflow-x: scroll;
+        height: 100%;
+    }
+    .main-aside .container {
+        margin: 0px auto 0px;
+        padding: 210px 10px 0px;
+    }
+    .main-aside .container .productSelect {
+        background: rgba(255, 250, 250, 0.3);
+        margin: 20px 50px 20px;
+    }
+    .main-aside .container .productSelect .productSelect_box .productSelect_title {
+        font-size: 1.6rem;
+    }
+    .main-aside .container .table {
+        background: rgba(255, 250, 250, 0.6);
+        margin: 30px auto 30px;
+        padding: 0px auto;
+    }
+    .main-aside .container .table thead tr th {
+        font-size: 1rem;
+    }
+    .main-aside .container .table tbody tr td {
+        font-size: 1rem;
+    }
+    .main-aside .container .table tfoot tr td {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .main-aside .container .text-center .btn-add-to-cart {
+        font-size: 1.3rem;
+        font-weight: 700;
+        background-color: snow;
+        border: none;
+        color: black;
+        cursor: pointer;
+    }
+    .main-aside .container .text-center .btn-add-to-cart:hover {
+        background-color: black;
+        color: snow;
+    }
+}
