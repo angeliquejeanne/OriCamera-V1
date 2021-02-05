@@ -5,16 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OriMeubles</title>
     <link rel="stylesheet" href="404-Error-OriMeuble.css">
+    <link rel="stylesheet" href="../src/css/styleGeneral.css">
 
 </head>
 <body>
     
+<header>
+
+    <nav>
+
+        <div class="header">
+            
+            <a href="../index.html" class="zoom" id="logo"><img src="../src/img/logo.png" alt=""></a>
+            
+            <div class="links">
+       
+                <button class="toggle image" id="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>    
+    
+                <ul class="liste-items">
+    
+                    <li class="zoom"><a href="../index.html">Accueil</a></li>
+  
+                    <li class="zoom"><a href="../catalogue.html">Catalogue</a></li>
+  
+                    <div id="navbarContent">
+                        <li class="checkout zoom navbar-item">
+                            <a class="btn" href="../links/404-Error-OriCamera.html" id="Panier"> <!-- remplacer la page error par ceci: href="panier.html" -->
+                              <span id="nbProduct"></span>
+                              <i class="fa fa-shopping-cart"></i>
+                              Panier
+                            </a>
+                        </li> 
+                    </div>
+  
+                    <li class="items zoom">
+                      Nos Boutiques
+                      <ul class="sous-liste">
+                          <li class="items-sous-liste"><a href="../links/404-Error-OriBears.html">OriBears</a></li>
+                          <li class="items-sous-liste"><a href="../links/404-Error-OriMeuble.html">OriWoods</a></li>
+                          
+                      </ul>
+                  </li>
+                    
+                </ul>
+    
+            </div>
+            
+        </div>
+            
+    </nav>
+  
+</header>
 
 <div class="over404">
     <div class="overlay"></div>
     <header>
       <h1 class="glitch" data-text="OriMeuble ! Oups, cette page n'existe pas encore." >OriMeuble ! Oups, cette page n'existe pas encore</h1>
-      <input class="button btn flexbutton" type="button" value="Retour" onclick="history.go(-1)">
+      <input class="button btnReturn flexbutton" type="button" value="Retour" onclick="history.go(-1)">
     </header>
   </div>
   
