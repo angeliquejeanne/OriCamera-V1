@@ -6,56 +6,11 @@
     <title>Oricamera</title>
     <meta name="description" content="Oricamera, notre nouvelle boutique en ligne spécialisée dans les appareils photos vintages">
 
-    <link rel="stylesheet" href="src/dist/style.css">
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
-<style>
-    .liste-items {
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
-    list-style-type: none;
-    height: 100%;
-    line-height: 50px;
-    font-size: 22px;
-}
-.items {
-    cursor: pointer;
-    margin: 0 20px;
-    flex-shrink: 0;
-    width:150px;
-    text-align: center;
-}
-/* Sous liste 1 */
-
-.sous-liste {
-    position: relative;
-    display: none;
     
-}
-.items-sous-liste {
-    list-style-type: none;
-    word-break: break-word;
-    text-align: center;
-    padding: 0 10px;
-    background:snow;
-    border-bottom: 1px solid black;
-    width: 110px;
-}
-.items-sous-liste:hover {
-    background:rgb(175, 130, 88);
-}
-.items-sous-liste:nth-child(3) {
-    height: 50px;
-}
-.items:hover > ul {
-    display: block;
-}
-
-
-</style>
+    <link rel="stylesheet" href="src/css/styleGeneral.css">
+    <link rel="stylesheet" href="src/css/styleIndex.css">
 </head>
 
 <body>
@@ -63,7 +18,7 @@
     <header>
 
         <nav>
-        
+  
             <div class="header">
                 
                 <a href="index.html" class="zoom" id="logo"><img src="./src/img/logo.png" alt=""></a>
@@ -79,24 +34,28 @@
                     <ul class="liste-items">
         
                         <li class="zoom"><a href="index.html">Accueil</a></li>
-
+      
+                        <li class="zoom"><a href="./catalogue.html">Catalogue</a></li>
+      
+                        <div id="navbarContent">
+                            <li class="checkout zoom navbar-item">
+                                <a class="btn" href="links/404-Error-OriCamera.html" id="Panier"> <!-- remplacer la page error par ceci: href="panier.html" -->
+                                  <span id="nbProduct"></span>
+                                  <i class="fa fa-shopping-cart"></i>
+                                  Panier
+                                </a>
+                            </li> 
+                        </div>
+      
                         <li class="items zoom">
-                            Services
-                            <ul class="sous-liste">
-                                <li class="items-sous-liste"><a href="./links/404-Error-OriBears.html">OriBears</a></li>
-                                <li class="items-sous-liste"><a href="./links/404-Error-OriMeuble.html">OriWoods</a></li>
-                                
-                            </ul>
-                        </li>
-
-                        <li class="zoom"><a href="./links/404-Error-OriCamera.html">Catalogue</a></li>
-                        <li class="checkout zoom">
-                            <a href="./links/404-Error-OriCamera.html">
-                                <i class="fa fa-shopping-cart red"></i>  Votre panier 
-                                <span class="badge badge-red" id="nbrArticles">0</span>
-                            </a>
-                        </li>
-                    
+                          Nos Boutiques
+                          <ul class="sous-liste">
+                              <li class="items-sous-liste"><a href="./links/404-Error-OriBears.html">OriBears</a></li>
+                              <li class="items-sous-liste"><a href="./links/404-Error-OriMeuble.html">OriWoods</a></li>
+                              
+                          </ul>
+                      </li>
+                        
                     </ul>
         
                 </div>
