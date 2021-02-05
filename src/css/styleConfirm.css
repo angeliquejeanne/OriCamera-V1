@@ -1,0 +1,381 @@
+.contenaire-confirm {
+    width: 100%;
+    height: 100%;
+    display: wrap;
+    margin: -120px auto;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    background: transparent;
+}
+.contenaire-confirm .confirm {
+    text-align: center;
+    margin: 0px auto;
+}
+.contenaire-confirm .confirm .confirm_box .confirm_title .fa-check {
+    color: #530101;
+}
+.contenaire-confirm .confirm .confirm_box .confirm_title span {
+    color: #530101;
+}
+.contenaire-confirm .confirm .confirm_box .confirm_details p {
+    color: black;
+}
+.contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-price {
+    color: black;
+}
+.contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-ref {
+    color: black;
+}
+.contenaire-confirm .confirm .confirm_box .confirm_details .confirm_btn {
+    font-weight: 700;
+}
+.contenaire-confirm .confirm .confirm_box .confirm_details .confirm_btn:hover {
+    font-weight: 700;
+}
+
+
+@media screen and (min-width: 320px) {
+    .contenaire-confirm {
+        margin: -58px auto;
+        height: 100%;
+    }
+    .contenaire-confirm .confirm {
+        margin: 130px auto;
+        background: rgba(255, 250, 250, 0.3);
+        width: 290px;
+        height: fit-content;
+    }
+    .contenaire-confirm .confirm .confirm_box {
+        text-align: center;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details p{
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-price{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-ref{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirm_btn {
+        font-size: .8rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .contenaire-confirm {
+        margin: -58px auto;
+        height: 100%;
+    }
+    .contenaire-confirm .confirm {
+        margin: 120px auto;
+        background: rgba(255, 250, 250, 0.3);
+        width: 290px;
+        height: fit-content;
+    }
+    .contenaire-confirm .confirm .confirm_box {
+        text-align: center;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details p{
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-price{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-ref{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirm_btn {
+        font-size: .8rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 411px) {
+    .contenaire-confirm {
+        margin: -58px auto;
+        height: 100%;
+    }
+    .contenaire-confirm .confirm {
+        margin: 140px auto;
+        background: rgba(255, 250, 250, 0.3);
+        width: 290px;
+        height: fit-content;
+    }
+    .contenaire-confirm .confirm .confirm_box {
+        text-align: center;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details p{
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-price{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-ref{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirm_btn {
+        font-size: .8rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .contenaire-confirm {
+        margin: -58px auto;
+        height: 100%;
+    }
+    .contenaire-confirm .confirm {
+        margin: 150px auto;
+        background: rgba(255, 250, 250, 0.3);
+        width: 340px;
+        height: fit-content;
+    }
+    .contenaire-confirm .confirm .confirm_box {
+        text-align: center;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details p{
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-price{
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-ref{
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirm_btn {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contenaire-confirm {
+        margin: -58px auto;
+        height: 100%;
+    }
+    .contenaire-confirm .confirm {
+        margin: 190px auto;
+        background: rgba(255, 250, 250, 0.3);
+        width: 550px;
+        height: fit-content;
+    }
+    .contenaire-confirm .confirm .confirm_box {
+        text-align: center;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details p{
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-price{
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-ref{
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirm_btn {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .contenaire-confirm {
+        margin: -76px auto;
+        height: 100%;
+    }
+    .contenaire-confirm .confirm {
+        margin: 210px auto;
+        background: rgba(255, 250, 250, 0.3);
+        width: 550px;
+        height: fit-content;
+    }
+    .contenaire-confirm .confirm .confirm_box {
+        text-align: center;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details p{
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-price{
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-ref{
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirm_btn {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contenaire-confirm {
+        margin: -76px auto;
+        height: 100%;
+    }
+    .contenaire-confirm .confirm {
+        margin: 230px auto;
+        background: rgba(255, 250, 250, 0.3);
+        width: 650px;
+        height: fit-content;
+    }
+    .contenaire-confirm .confirm .confirm_box {
+        text-align: center;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title {
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 45px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details {
+        padding: 20px 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details p{
+        font-size: 1.3rem;
+        margin-bottom: 50px;
+        padding: 0px 10px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-price{
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-ref{
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirm_btn {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .contenaire-confirm {
+        margin: -76px auto;
+        height: 100%;
+    }
+    .contenaire-confirm .confirm {
+        margin: 300px auto;
+        background: rgba(255, 250, 250, 0.3);
+        width: 750px;
+        height: fit-content;
+    }
+    .contenaire-confirm .confirm .confirm_box {
+        text-align: center;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title {
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 45px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details {
+        padding: 20px 30px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details p{
+        font-size: 1.3rem;
+        margin-bottom: 50px;
+        padding: 0px 10px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-price{
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-ref{
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirm_btn {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}

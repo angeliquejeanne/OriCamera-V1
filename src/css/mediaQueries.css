@@ -1,0 +1,194 @@
+@media (min-width: 320px) and (max-width: 768px) {
+    header {
+      margin: -10px auto;
+    }
+    header nav .header #logo {
+      font-size: 24px;
+    }
+    header nav .header .links {
+      padding: 20px 20px;
+      float: right;
+    }
+    header nav .header .links #menu-icon {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+    }
+    header nav .header .links ul {
+      display: none;
+      position: absolute;
+      padding: 20px;
+      background-color: rgba(255, 250, 250, 0.7);
+      top: 76px;
+      right: 0px;
+      width: 100%;
+    }
+    header nav .header .links:hover ul {
+      display: block;
+    }
+    header nav .header .links ul li {
+      text-align: center;
+      width: 100%;
+      padding: 15px 0;
+      margin: 0;
+    }
+  
+    main .accueil .intro__box {
+      padding-top: 10px;
+      margin: -90px auto auto auto;
+      height: 100%;
+    }
+    main .accueil .intro__box .space__title {
+      margin-top: 20px;
+    }
+    main .accueil .intro__box .space__title .accueil__title {
+      font-size: 24px;
+      font-weight: bold;
+      background-color: rgba(255, 250, 250, 0.5);
+      border-radius: 25px;
+    }
+    main .accueil .intro__box .accueil__description {
+      font-size: 14px;
+      background-color: rgba(255, 250, 250, 0.5);
+      border-radius: 25px;
+    }
+    main .accueil .intro__box .accueil__description :nth-last-child(2) {
+      margin: 0px auto 30px;
+    }
+    main .accueil .intro__box .accueil__description :nth-last-child(3) {
+      margin: 0px auto 10px;
+    }
+    main .accueil .intro__box .accueil__description :nth-last-child(1) {
+      font-size: 16px;
+      font-weight: bold;
+      color: #530101;
+    }
+  
+    .main .productSelect .productSelect__box {
+      margin: 50px auto 0px;
+    }
+    .main .productSelect .productSelect__box .productSelect__title {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+  
+    .main .container-pricipal .content-cart {
+      flex-direction: column;
+    }
+  
+    .content-cart .cart .btn {
+      right: -75%;
+    }
+  
+    footer ul li {
+      padding: 5px;
+    }
+    footer ul li a p {
+      font-size: 10px;
+      font-weight: bold;
+    }
+    footer ul .list-inline-item {
+      margin: 0px;
+    }
+    footer ul .list-inline-item:not(:last-child) {
+      margin-right: 0rem;
+    }
+    footer ul li .zoom {
+      transition: transform 0.2s ease;
+    }
+    footer ul li .zoom:hover {
+      transform: scale(1.5);
+    }
+  
+    .contenaire-confirm .confirm {
+      padding: 0px;
+    }
+    .contenaire-confirm .confirm .text-center .confirm__title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  
+    .overlay .popup .close i {
+      font-size: 15px;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 375px) {
+    .overlay .popup .content-overlay .cart-overlay .menu-link .warning {
+      left: 15%;
+      top: 12%;
+    }
+    .overlay .popup .content-overlay .cart-overlay .btn-add {
+      left: 85%;
+      top: 530px;
+      height: 30px;
+      width: 30px;
+    }
+  
+    .cart-overlay .btn-add i {
+      font-size: 15px;
+    }
+  }
+  @media (min-width: 375px) and (max-width: 425px) {
+    .overlay .popup .content-overlay .cart-overlay .menu-link .warning {
+      left: 25%;
+      top: 12%;
+    }
+    .overlay .popup .content-overlay .cart-overlay .btn-add {
+      left: 85%;
+      top: 530px;
+      height: 30px;
+      width: 30px;
+    }
+  
+    .cart-overlay .btn-add i {
+      font-size: 15px;
+    }
+  }
+  @media (min-width: 425px) and (max-width: 768px) {
+    .overlay .popup .content-overlay .cart-overlay .menu-link .warning {
+      left: 38%;
+      top: 12%;
+    }
+    .overlay .popup .content-overlay .cart-overlay .btn-add {
+      left: 85%;
+      top: 530px;
+      height: 30px;
+      width: 30px;
+    }
+  
+    .cart-overlay .btn-add i {
+      font-size: 15px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .overlay .popup .content-overlay .cart-overlay .menu-link .warning {
+      left: 35%;
+      top: 12%;
+    }
+    .overlay .popup .content-overlay .cart-overlay .btn-add {
+      left: 80%;
+      top: 530px;
+      height: 30px;
+      width: 30px;
+    }
+  
+    .cart-overlay .btn-add i {
+      font-size: 15px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .overlay .popup .content-overlay .cart-overlay .menu-link .warning {
+      left: 38%;
+      top: 12%;
+    }
+    .overlay .popup .content-overlay .cart-overlay .btn-add {
+      left: 90%;
+      top: 530px;
+      height: 30px;
+      width: 30px;
+    }
+  
+    .cart-overlay .btn-add i {
+      font-size: 15px;
+    }
+  }
