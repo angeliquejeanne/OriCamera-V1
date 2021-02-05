@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 
 *{
-  font-family: 'Sofia', cursive;
   box-sizing: border-box;
   top: 0;
   left: 0;
@@ -41,9 +40,10 @@
   font-size: 6rem;
   font-weight: 700;
   margin: 0;
-  color: grey;
+  color: rgb(70, 30, 4);
   letter-spacing: .8px;
   text-transform: uppercase;
+  font-family: 'Sofia', cursive;
 }
 
 .glitch:before,
@@ -160,25 +160,27 @@
   cursor: pointer;
   transition: 5s background;
 }
-.btn
+.btnReturn
 {
   display: inline-block;
-  color: #fff;
+  color: rgb(70, 30, 4);
   text-decoration: none;
-  background:rgba(92, 92, 92, 0.45);
+  background:rgba(255, 250, 250, 0.6);
   font-size: 18px;
+  font-weight: bold;
   border: none;
-  opacity: .45;
-  border: 1px solid black;
+  opacity: .7;
+  border: 3px solid rgb(70, 30, 4);
   border-radius:50%;
   padding: .5rem;
   transition: .6s background; 
   cursor: pointer;
 }
-.btn:hover
+.btnReturn:hover
 {
-  background:#363636;
-  opacity: .45;
+  background:rgb(70, 30, 4);
+  color: snow;
+  opacity: .9;
 }
 
 @media screen and (min-width:320px) {
